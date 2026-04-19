@@ -194,9 +194,13 @@ with tab2:
     fig2.add_vline(x=38, line=dict(color="#ff3355", width=1, dash="dash"))
 
     fig2.update_layout(
-        height=300, xaxis=dict(range=[0, 110]),
+        height=300,
         margin=dict(l=0, r=50, t=10, b=0),
-        **PLOTLY_TEMPLATE,
+        paper_bgcolor="#0a0c0f",
+        plot_bgcolor="#0a0c0f",
+        font=dict(family="IBM Plex Mono", color="#c8d6e5", size=11),
+        xaxis=dict(range=[0, 110], gridcolor="#1e2530", showgrid=True, zeroline=False),
+        yaxis=dict(gridcolor="#1e2530", showgrid=True, zeroline=False),
     )
     st.plotly_chart(fig2, use_container_width=True)
 
