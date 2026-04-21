@@ -7,3 +7,4 @@ plotly>=5.22.0
 pytz>=2024.1
 alpaca-trade-api>=3.0.0
 websocket-client>=1.6.0
+nest_asyncio>=1.6.0
